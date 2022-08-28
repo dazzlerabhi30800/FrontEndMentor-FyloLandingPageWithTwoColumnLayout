@@ -28,8 +28,8 @@
 </head>
 
 <body>
-  <nav class="navbar">
-    <img src="./images/logo.svg" alt="logo">
+  <nav class="navbar" aria-label="primary">
+    <img src="./images/logo.svg" alt="Fylo">
     <ul class="link--list">
       <li>Features</li>
       <li>Times</li>
@@ -55,7 +55,7 @@
         <label for="email"></label>
         <input type="text" id="email" placeholder="enter your email">
         <small>Invalid Email</small>
-        <button>Get Started</button>
+        <button type="submit">Get Started</button>
       </form>
     </div>
 
@@ -74,9 +74,10 @@
             Securely share files and folders with friends, family and colleagues for
             live collaboration. No email attachments required!
           </p>
-          <a class="work">See how Fylo works! <span><img src="./images/icon-arrow.svg" alt="arrow"></span></a>
+          <a class="work">See how Fylo works! <span><img aria-hidden="true" src="./images/icon-arrow.svg"
+                alt="arrow"></span></a>
           <div class="review--card">
-            <img src="./images/icon-quotes.svg" alt="quotes">
+            <img src="./images/icon-quotes.svg" alt="quotes" aria-hidden="true">
             <p>
               Fylo has improved our team productivity by an order of magnitude. Since
               making the switch our team has become a well-oiled collaboration machine.
@@ -108,12 +109,12 @@
         <label for="email2"></label>
         <input type="text" id="email2" placeholder="email@example.com">
         <small>Invalid Email</small>
-        <button>Get Started for Free</button>
+        <button type="submit">Get Started for Free</button>
       </form>
     </div>
   </main>
   <!-- FOOTER  -->
-  <footer>
+  <footer aria-label="footer">
     <div class="address--wrapper">
       <div class="logo">
         <svg width="166" height="49" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -136,29 +137,43 @@
         </svg>
       </div>
       <div class="contact--wrapper">
-        <div class="contact">
-          <img src="./images/icon-phone.svg" alt="phone">
+        <address class="contact">
+          <img src="./images/icon-phone.svg" aria-hidden="true" alt="phone">
           <span> Phone: +1-543-123-4567</span>
-        </div>
-        <div class="contact">
-          <img src="./images/icon-email.svg" alt="email">
+        </address>
+        <address class="contact">
+          <img src="./images/icon-email.svg" aria-hidden="true" alt="email">
           <span>example@fylo.com</span>
-        </div>
+        </address>
       </div>
     </div>
-    <div class="links--wrapper">
-      <a>About Us</a>
-      <a>Contact Us</a>
-      <a>Jobs</a>
-      <a>Terms</a>
-      <a>Press</a>
-      <a>Privacy</a>
-      <a>Blog</a>
-    </div>
+    <ul class="links--wrapper">
+      <li>
+        <a href="#">About Us</a>
+      </li>
+      <li>
+        <a href="#">Contact Us</a>
+      </li>
+      <li>
+        <a href="#">Jobs</a>
+      </li>
+      <li>
+        <a href="#">Terms</a>
+      </li>
+      <li>
+        <a href="#">Press</a>
+      </li>
+      <li>
+        <a href="#">Privacy</a>
+      </li>
+      <li>
+        <a href="#">Blog</a>
+      </li>
+    </ul>
     <div class="social--wrapper">
-      <i class="fab fa-facebook"></i>
-      <i class="fab fa-twitter"></i>
-      <i class="fab fa-instagram"></i>
+      <a aria-hidden="true"><i class="fab fa-facebook"></i></a>
+      <a aria-hidden="true"><i class="fab fa-twitter"></i></a>
+      <a aria-hidden="true"><i class="fab fa-instagram"></i></a>
     </div>
   </footer>
 

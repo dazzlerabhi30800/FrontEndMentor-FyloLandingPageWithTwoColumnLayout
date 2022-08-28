@@ -487,14 +487,18 @@ footer .address--wrapper {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
+    list-style: none;
 }
 
-.link--wrapper a {
+.links--wrapper li a {
+    text-decoration: none;
     transition: all .3s linear;
+    color: var(--Light-Grayish-Blue);
 }
 
 .links--wrapper a:hover {
     color: var(--Light-Gray);
+    text-decoration: underline;
 }
 
 .social--wrapper {
